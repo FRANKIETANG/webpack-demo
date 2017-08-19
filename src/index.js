@@ -3,7 +3,7 @@ import $ from 'jquery'
 
 function component () {
 
-    var element = $('<div></div>');
+    var element = $('<div></div>')
 
     /* lodash is required for the next line to work */
     element.html(_.join(['Hello','webpack'], ' '))
@@ -12,4 +12,4 @@ function component () {
 
 }
 
-document.body.appendChild(component());
+document.body.appendChild(component())
