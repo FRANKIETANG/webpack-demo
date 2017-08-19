@@ -1,11 +1,15 @@
 import _ from 'lodash'
+import $ from 'jquery'
 
-function componebt() {
-    var element = document.createElement('div')
+function component () {
 
-    element.innerHTML = _.join(['Hello','webpack'],' ')
+    var element = $('<div></div>');
 
-    return element
+    /* lodash is required for the next line to work */
+    element.html(_.join(['Hello','webpack'], ' '))
+
+    return element.get(0)
+
 }
 
-document.body.appendChild(componebt())
+document.body.appendChild(component());
